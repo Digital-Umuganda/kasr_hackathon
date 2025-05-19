@@ -2,6 +2,7 @@
 import Width from "./components/width";
 import Nav from "./components/sections/nav";
 import Hero from "./components/sections/hero";
+import Rules from "./components/sections/rules";
 import Tracks from "./components/sections/tracks";
 import Overview from "./components/sections/overview";
 import Structure from "./components/sections/structure";
@@ -19,6 +20,7 @@ function App() {
         <Tracks />
         <Structure />
         <EvaluationAndLeaderboard />
+        <Rules />
       </Width>
     </main>
   );
