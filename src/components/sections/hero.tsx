@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <Width className="h-[800px] bg-[#009263] rounded-lg relative flex flex-col items-center overflow-hidden mb-8">
+    <Width className="h-[800px] bg-[#009263] rounded-lg relative flex flex-col items-center overflow-hidden mb-10">
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[url('/waves.svg')] bg-cover bg-no-repeat opacity-35 bg-fixed"
