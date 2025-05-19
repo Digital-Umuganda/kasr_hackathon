@@ -4,6 +4,7 @@ import Nav from "./components/sections/nav";
 import Hero from "./components/sections/hero";
 import Dates from "./components/sections/dates";
 import Rules from "./components/sections/rules";
+import Prizes from "./components/sections/prizes";
 import Tracks from "./components/sections/tracks";
 import Overview from "./components/sections/overview";
 import Structure from "./components/sections/structure";
@@ -23,6 +24,7 @@ function App() {
         <EvaluationAndLeaderboard />
         <Rules />
         <Dates />
+        <Prizes />
       </Width>
     </main>
   );
