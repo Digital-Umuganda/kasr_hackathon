@@ -4,6 +4,7 @@ import Nav from "./components/sections/nav";
 import Hero from "./components/sections/hero";
 import Overview from "./components/sections/overview";
 import Motivation from "./components/sections/motivation";
+import Tracks from "./components/sections/tracks";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Width className="flex flex-col gap-10 px-4">
         <Overview />
         <Motivation />
+        <Tracks />
       </Width>
     </main>
   );
