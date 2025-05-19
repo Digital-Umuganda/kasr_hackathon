@@ -2,6 +2,7 @@
 import Width from "./components/width";
 import Nav from "./components/sections/nav";
 import Hero from "./components/sections/hero";
+import Dates from "./components/sections/dates";
 import Rules from "./components/sections/rules";
 import Tracks from "./components/sections/tracks";
 import Overview from "./components/sections/overview";
@@ -21,6 +22,7 @@ function App() {
         <Structure />
         <EvaluationAndLeaderboard />
         <Rules />
+        <Dates />
       </Width>
     </main>
   );
