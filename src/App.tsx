@@ -6,6 +6,7 @@ import Tracks from "./components/sections/tracks";
 import Overview from "./components/sections/overview";
 import Structure from "./components/sections/structure";
 import Motivation from "./components/sections/motivation";
+import EvaluationAndLeaderboard from "./components/sections/evaluation";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Motivation />
         <Tracks />
         <Structure />
+        <EvaluationAndLeaderboard />
       </Width>
     </main>
   );
