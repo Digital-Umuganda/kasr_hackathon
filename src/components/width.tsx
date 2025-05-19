@@ -7,7 +7,16 @@ const Width = ({
   className?: string;
   children: React.ReactNode;
 }) => {
-  return <section className={cn(className, "w-[1400px]")}>{children}</section>;
+  return (
+    <section
+      className={cn(
+        className,
+        "xl:w-[1400px] lg:w-[1000px] md:w-[750px] sm:w-[600px] w-full px-4"
+      )}
+    >
+      {children}
+    </section>
+  );
 };
 
 export default Width;
