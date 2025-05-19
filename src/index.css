@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -118,6 +119,7 @@
 
 @layer base {
   * {
+    font-family: "Quicksand", sans-serif;
     @apply border-border outline-ring/50;
   }
   body {
