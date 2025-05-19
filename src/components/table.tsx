@@ -23,7 +23,6 @@ interface DataTableProps<TData, TValue> {
   data: TData[];
   pageSize?: number;
   isLoading?: boolean;
-  isPaginated?: boolean;
   columns: ColumnDef<TData, TValue>[];
 }
 
@@ -51,7 +50,7 @@ export const TableSkeleton = ({ columns, rows }: TableSkeletonProps) => {
 export function DataTable<TData, TValue>({
   data,
   columns,
-  pageSize = 7,
+  pageSize = 15,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,

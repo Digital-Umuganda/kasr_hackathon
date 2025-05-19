@@ -2,9 +2,10 @@
 import Width from "./components/width";
 import Nav from "./components/sections/nav";
 import Hero from "./components/sections/hero";
-import Overview from "./components/sections/overview";
-import Motivation from "./components/sections/motivation";
 import Tracks from "./components/sections/tracks";
+import Overview from "./components/sections/overview";
+import Structure from "./components/sections/structure";
+import Motivation from "./components/sections/motivation";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Overview />
         <Motivation />
         <Tracks />
+        <Structure />
       </Width>
     </main>
   );

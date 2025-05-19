@@ -47,7 +47,7 @@ const Tracks = () => {
     {
       track: "C — Large",
       transcribed: "1 000 hrs",
-      unlabeled: "1 000 h (unsupervised)",
+      unlabeled: "1 000 hrs (unsupervised)",
       restrictions:
         "May combine the supplied data with publicly available open‑source datasets (e.g. Common Voice, BABEL)",
     },
