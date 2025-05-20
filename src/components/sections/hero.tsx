@@ -1,5 +1,5 @@
 // Assets
-import gates from "../../assets/gates.png";
+import gates from "../../assets/gates.svg";
 
 // Components
 import Width from "../width";
@@ -22,7 +22,7 @@ const Hero = () => {
           government) and supporting a wide range of real-world use cases.
         </p>
       </div>
-      <div className="z-10 absolute bottom-4 left-4 w-auto p-6 h-auto bg-white rounded gap-6 flex flex-row items-center">
+      <div className="z-10 absolute bottom-4 left-4 w-auto p-6 h-auto bg-white rounded gap-2 flex flex-row items-center">
         <p>Sponsored by:</p>
         <img src={gates} alt="gates" className="w-[150px]" />
       </div>
