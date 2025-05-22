@@ -22,8 +22,8 @@ const Hero = () => {
           government) and supporting a wide range of real-world use cases.
         </p>
       </div>
-      <div className="z-10 absolute bottom-4 left-4 w-auto p-6 h-auto bg-white rounded gap-2 flex flex-row items-center">
-        <p>Sponsored by:</p>
+      <div className="z-10 absolute bottom-4 md:right-auto right-4 left-4 w-auto p-6 h-auto bg-white rounded gap-2 flex flex-wrap flex-row items-center">
+        <p>The dataset collection was sponsored by by:</p>
         <img src={gates} alt="gates" className="w-[150px]" />
       </div>
     </Width>

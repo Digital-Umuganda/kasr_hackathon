@@ -12,7 +12,8 @@ const Rules = () => {
           </Title>
           <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
             <li className="text-justify">
-              <span className="font-black">Team size</span>: 5 participants.
+              <span className="font-black">Team size</span>: 5 participants
+              maximum.
             </li>
             <li className="text-justify">
               <span className="font-black">One leaderboard account</span>: per
