@@ -12,15 +12,14 @@ const Rules = () => {
           </Title>
           <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
             <li className="text-justify">
-              <span className="font-black">Team size</span>: 5 participants
-              maximum.
+              <span className="font-black">Team size</span>≤ 5 participants
             </li>
             <li className="text-justify">
-              <span className="font-black">One leaderboard account</span>: per
+              <span className="font-black">One leaderboard account</span> per
               team.
             </li>
             <li className="text-justify">
-              <span className="font-black">No manual transcription</span>: or
+              <span className="font-black">No manual transcription</span> or
               human correction of test audio.
             </li>
             <li className="text-justify">
@@ -29,7 +28,7 @@ const Rules = () => {
                 trained model checkpoints/weights
               </span>
               , and <span className="font-black">training scripts</span> must be
-              made <span className="font-black">publicly available</span> (e.g.,
+              made <span className="font-black">publicly available</span> (e.g:
               in a GitHub repository) and released under a permissive
               open‑source license (Apache‑2.0, MIT, BSD‑3‑Clause, or MPL‑2.0).
             </li>
@@ -65,7 +64,8 @@ const Rules = () => {
             <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
               <li className="text-justify">
                 <span className="font-black">Training data</span>: Teams may use
-                only the 500 hrs transcribed corpus supplied for Track A.
+                <span>only</span> the 500 hrs transcribed corpus supplied for
+                Track A.
               </li>
               <li className="text-justify">
                 <span className="font-black">
@@ -75,49 +75,16 @@ const Rules = () => {
                 used.
               </li>
               <li className="text-justify">
-                <span className="font-black">Cross‑lingual transfe</span>:
-                Allowed as in Track A.
-              </li>
-              <li className="text-justify">
-                <span className="font-black">Training‑trace sharing</span> Teams
-                must log experiments with{" "}
-                <span className="font-black">Weights & Biases</span>,
-                <span className="font-black">TensorBoard</span>, or an
-                equivalent public experiment‑tracking tool and grant organizers
-                read access to verify that only Track A data were used.
-              </li>
-              <li className="text-justify">
-                <span className="font-black">Data augmentation</span>{" "}
-                Recommended to keep GPU hours ≤ 150; teams exceeding this must
-                disclose resource usage.
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-4 items-start">
-            <Title className="text-xl text-[#009263]">
-              Track B – Medium (1000 hrs transcribed)
-            </Title>
-            <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
-              <li className="text-justify">
-                <span className="font-black">Training data</span>: Teams may use
-                <span className="font-black">only</span> the 1000 hrs
-                transcribed corpus supplied for Track B.
-              </li>
-              <li className="text-justify">
-                <span className="font-black">External speech corpora</span>: Not
-                allowed.
-              </li>
-              <li className="text-justify">
-                <span className="font-black">Cross‑lingual transfe</span>:
+                <span className="font-black">Cross‑lingual transfer</span>:
                 Pre‑trained models on{" "}
-                <span className="font-black">non‑Kinyarwanda languages</span>{" "}
+                <span className="font-black">non‑Kinyarwanda</span> languages
                 (e.g., wav2vec 2.0 English base) are permitted, but fine‑tuning
                 must use only the Track A data.
               </li>
               <li className="text-justify">
                 <span className="font-black">Training‑trace sharing</span> Teams
                 must log experiments with{" "}
-                <span className="font-black">Weights & Biases</span>,
+                <span className="font-black">Weights & Biases</span>,{" "}
                 <span className="font-black">TensorBoard</span>, or an
                 equivalent public experiment‑tracking tool and grant organizers
                 read access to verify that only Track A data were used.
@@ -131,12 +98,50 @@ const Rules = () => {
           </div>
           <div className="flex flex-col gap-4 items-start">
             <Title className="text-xl text-[#009263]">
+              Track B – Medium (1000 hrs transcribed)
+            </Title>
+            <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
+              <li className="text-justify">
+                <span className="font-black">Training data</span>: Teams may use{" "}
+                <span className="font-black">only</span> the 1000 hrs
+                transcribed corpus supplied for Track B.
+              </li>
+              <li className="text-justify">
+                <span className="font-black">External speech corpora</span>: Not
+                allowed.
+              </li>
+              <li className="text-justify">
+                <span className="font-black">
+                  Cross‑lingual transfer & pre‑training
+                </span>
+                : Pre‑trained models on{" "}
+                <span className="font-black">non‑Kinyarwanda</span> languages
+                (e.g., wav2vec 2.0 English base) are permitted, but fine‑tuning
+                must use only the Track B data.
+              </li>
+              <li className="text-justify">
+                <span className="font-black">Training‑trace sharing</span>:
+                Teams must log experiments with{" "}
+                <span className="font-black">Weights & Biases</span>,{" "}
+                <span className="font-black">TensorBoard</span>, or an
+                equivalent public experiment‑tracking tool and grant organizers
+                read access to verify that only Track B data were used.
+              </li>
+              <li className="text-justify">
+                <span className="font-black">Compute budget</span>: Recommended
+                to keep <span className="font-black">GPU hours</span> ≤ 300;
+                teams exceeding this must disclose resource usage.
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-4 items-start">
+            <Title className="text-xl text-[#009263]">
               Track C – Large (1000 hrs transcribed + 1000 hrs unlabeled)
             </Title>
             <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
               <li className="text-justify">
                 <span className="font-black">Training data</span>: Teams must
-                use the 1 000 hrs transcribed + 1000 hrs unlabeled audio
+                use the 1000 hrs transcribed + 1000 hrs unlabeled audio
                 supplied. Semi‑/self‑supervised training (pseudo‑labeling, SSL
                 pre‑training) is encouraged.
               </li>
@@ -153,7 +158,7 @@ const Rules = () => {
                 Prohibited.
               </li>
               <li className="text-justify">
-                <span className="font-black">Model size disclosure</span> Teams
+                <span className="font-black">Model size disclosure</span>: Teams
                 must report total parameter count and inference real‑time factor
                 (RTF) on 1 * A100 GPU.
               </li>
