@@ -73,26 +73,26 @@ const Structure = () => {
   const data1: Type1[] = [
     {
       test: "25",
-      train: "450",
-      total: "500",
+      train: "490",
+      total: "540",
       devtest: "25",
       unlabeled: "-",
       track: "A — Small",
     },
     {
       test: "50",
-      train: "900",
+      train: "980",
       devtest: "50",
-      total: "1000",
+      total: "1180",
       unlabeled: "-",
       track: "B — Medium",
     },
     {
       test: "50",
-      train: "900",
+      train: "980",
+      total: "2250",
       devtest: "50",
-      total: "2000",
-      unlabeled: "1000",
+      unlabeled: "1170",
       track: "C — Large",
     },
   ];

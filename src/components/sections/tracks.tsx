@@ -35,19 +35,19 @@ const Tracks = () => {
     {
       unlabeled: "-",
       track: "A — Small",
-      transcribed: "500 hrs",
+      transcribed: "540 hrs",
       restrictions: "Must train only on the supplied data",
     },
     {
       unlabeled: "-",
       track: "B — Medium",
-      transcribed: "1 000 hrs",
+      transcribed: "1 180 hrs",
       restrictions: "Must train only on the supplied data",
     },
     {
       track: "C — Large",
-      transcribed: "1 000 hrs",
-      unlabeled: "1 000 hrs (unsupervised)",
+      transcribed: "1 180 hrs",
+      unlabeled: "1 170 hrs (unsupervised)",
       restrictions:
         "May combine the supplied data with publicly available open‑source datasets (e.g. Common Voice, BABEL)",
     },
@@ -63,7 +63,7 @@ const Tracks = () => {
             Track A – Small Dataset
           </Title>
           <p className="text-justify">
-            Develop an ASR model using the 500 hrs transcribed corpus. Emphasis
+            Develop an ASR model using the 540 hrs transcribed corpus. Emphasis
             is on <span className="font-black">data efficiency</span> and
             creative augmentation.
           </p>
@@ -73,7 +73,7 @@ const Tracks = () => {
             Track B – Medium Dataset
           </Title>
           <p className="text-justify">
-            Build a model with the full 1000hrs transcribed corpus. Focus on{" "}
+            Build a model with the full 1180hrs transcribed corpus. Focus on{" "}
             <span className="font-black">scalability</span> and{" "}
             <span className="font-black">architectural improvements</span>.
           </p>
@@ -83,7 +83,7 @@ const Tracks = () => {
             Track C - Large Dataset
           </Title>
           <p className="text-justify">
-            Leverage 1000hrs transcribed + 1000hrs unlabeled audio.
+            Leverage 1180hrs transcribed + 1170hrs unlabeled audio.
             Semi‑supervised or self‑supervised methods (e.g. wav2vec 2.0,
             Whisper fine‑tuning) are encouraged. External{" "}
             <span className="font-black">open‑source</span> speech data is

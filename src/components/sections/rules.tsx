@@ -59,12 +59,12 @@ const Rules = () => {
           </Title>
           <div className="flex flex-col gap-4 items-start">
             <Title className="text-xl text-[#009263]">
-              Track A – Small (500 hrs transcribed)
+              Track A – Small (540 hrs transcribed)
             </Title>
             <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
               <li className="text-justify">
                 <span className="font-black">Training data</span>: Teams may use
-                <span>only</span> the 500 hrs transcribed corpus supplied for
+                <span>only</span> the 540 hrs transcribed corpus supplied for
                 Track A.
               </li>
               <li className="text-justify">
@@ -98,12 +98,12 @@ const Rules = () => {
           </div>
           <div className="flex flex-col gap-4 items-start">
             <Title className="text-xl text-[#009263]">
-              Track B – Medium (1000 hrs transcribed)
+              Track B – Medium (1180 hrs transcribed)
             </Title>
             <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
               <li className="text-justify">
                 <span className="font-black">Training data</span>: Teams may use{" "}
-                <span className="font-black">only</span> the 1000 hrs
+                <span className="font-black">only</span> the 1180 hrs
                 transcribed corpus supplied for Track B.
               </li>
               <li className="text-justify">
@@ -136,12 +136,12 @@ const Rules = () => {
           </div>
           <div className="flex flex-col gap-4 items-start">
             <Title className="text-xl text-[#009263]">
-              Track C – Large (1000 hrs transcribed + 1000 hrs unlabeled)
+              Track C – Large (1180 hrs transcribed + 1170 hrs unlabeled)
             </Title>
             <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
               <li className="text-justify">
                 <span className="font-black">Training data</span>: Teams must
-                use the 1000 hrs transcribed + 1000 hrs unlabeled audio
+                use the 1180 hrs transcribed + 1170 hrs unlabeled audio
                 supplied. Semi‑/self‑supervised training (pseudo‑labeling, SSL
                 pre‑training) is encouraged.
               </li>

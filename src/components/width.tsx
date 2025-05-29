@@ -11,7 +11,7 @@ const Width = ({
     <section
       className={cn(
         className,
-        "xl:w-[1400px] lg:w-[1000px] md:w-[750px] sm:w-[600px] w-full px-4"
+        "xl:w-[95%] lg:w-[1000px] md:w-[750px] sm:w-[600px] w-full px-4"
       )}
     >
       {children}

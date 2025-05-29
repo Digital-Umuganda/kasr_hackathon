@@ -26,16 +26,16 @@ const Overview = () => {
         </p>
         <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
           <li className="text-justify">
-            <span className="font-black">Track A – Small</span>: 500 hours of
+            <span className="font-black">Track A – Small</span>: 540 hours of
             fully transcribed Kinyarwanda speech.
           </li>
           <li className="text-justify">
-            <span className="font-black">Track B – Medium</span>: 1000 hours of
+            <span className="font-black">Track B – Medium</span>: 1180 hours of
             fully transcribed Kinyarwanda speech.
           </li>
           <li className="text-justify">
-            <span className="font-black">Track C – Large</span>: 1000 hours of
-            transcribed speech plus 1000 hours of unlabeled Kinyarwanda audio.
+            <span className="font-black">Track C – Large</span>: 1180 hours of
+            transcribed speech plus 1170 hours of unlabeled Kinyarwanda audio.
           </li>
         </ul>
         <p className="text-justify">
