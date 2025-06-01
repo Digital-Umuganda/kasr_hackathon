@@ -26,16 +26,35 @@ const Overview = () => {
         </p>
         <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
           <li className="text-justify">
-            <span className="font-black">Track A – Small</span>: 540 hours of
-            fully transcribed Kinyarwanda speech.
+            <a
+              target="_blank"
+              className="font-black underline decoration-dashed cursor-pointer text-[#009263]"
+              href="https://www.kaggle.com/t/72712e5b79b74cdc96c69b43291a599e"
+            >
+              Track A – Small
+            </a>
+            : 540 hours of fully transcribed Kinyarwanda speech.
           </li>
           <li className="text-justify">
-            <span className="font-black">Track B – Medium</span>: 1180 hours of
-            fully transcribed Kinyarwanda speech.
+            <a
+              target="_blank"
+              className="font-black underline decoration-dashed cursor-pointer text-[#009263]"
+              href="https://www.kaggle.com/t/cdb2b277147742b7a11dd170b9d2082a"
+            >
+              Track B – Medium
+            </a>
+            : 1180 hours of fully transcribed Kinyarwanda speech.
           </li>
           <li className="text-justify">
-            <span className="font-black">Track C – Large</span>: 1180 hours of
-            transcribed speech plus 1170 hours of unlabeled Kinyarwanda audio.
+            <a
+              target="_blank"
+              className="font-black underline decoration-dashed cursor-pointer text-[#009263]"
+              href="https://www.kaggle.com/competitions/kinyarwanda-automatic-speech-recognition-track-c"
+            >
+              Track C – Large
+            </a>
+            : 1180 hours of transcribed speech plus 1170 hours of unlabeled
+            Kinyarwanda audio.
           </li>
         </ul>
         <p className="text-justify">

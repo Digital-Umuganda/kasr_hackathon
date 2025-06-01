@@ -67,6 +67,16 @@ const Tracks = () => {
             is on <span className="font-black">data efficiency</span> and
             creative augmentation.
           </p>
+          <p>
+            To join this track go this{" "}
+            <a
+              target="_blank"
+              className="text-[#009263] underline decoration-dotted"
+              href="https://www.kaggle.com/t/72712e5b79b74cdc96c69b43291a599e"
+            >
+              link
+            </a>
+          </p>
         </div>
         <div className="flex flex-col gap-2 items-start">
           <Title className="text-xl text-[#009263]">
@@ -76,6 +86,16 @@ const Tracks = () => {
             Build a model with the full 1180hrs transcribed corpus. Focus on{" "}
             <span className="font-black">scalability</span> and{" "}
             <span className="font-black">architectural improvements</span>.
+          </p>
+          <p>
+            To join this track go this{" "}
+            <a
+              target="_blank"
+              className="text-[#009263] underline decoration-dotted"
+              href="https://www.kaggle.com/t/cdb2b277147742b7a11dd170b9d2082a"
+            >
+              link
+            </a>
           </p>
         </div>
         <div className="flex flex-col gap-2 items-start">
@@ -88,6 +108,16 @@ const Tracks = () => {
             Whisper fine‑tuning) are encouraged. External{" "}
             <span className="font-black">open‑source</span> speech data is
             allowed but must be disclosed.
+          </p>
+          <p>
+            To join this track go this{" "}
+            <a
+              target="_blank"
+              className="text-[#009263] underline decoration-dotted"
+              href="https://www.kaggle.com/competitions/kinyarwanda-automatic-speech-recognition-track-c"
+            >
+              link
+            </a>
           </p>
         </div>
       </div>
