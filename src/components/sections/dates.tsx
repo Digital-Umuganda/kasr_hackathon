@@ -23,19 +23,23 @@ const columns: ColumnDef<Type>[] = [
 const Dates = () => {
   const data: Type[] = [
     {
-      date: "June 1, 2025",
+      date: "June 05, 2026",
+      milestone: "Hackathon announcement",
+    },
+    {
+      date: "June 15, 2026",
       milestone: "Hackathon Launch",
     },
     {
-      date: "June 30, 2025",
+      date: "July 15, 2026",
       milestone: "Submission Deadline",
     },
     {
-      date: "July 1–11, 2025",
-      milestone: "Top 5 Review & Validation",
+      date: "July 15–31, 2026",
+      milestone: "Review and Validation",
     },
     {
-      date: "July 14, 2025",
+      date: "August 3, 2026",
       milestone: "Winners Announced",
     },
   ];

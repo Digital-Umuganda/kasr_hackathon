@@ -9,7 +9,6 @@ import Tracks from "./components/sections/tracks";
 import License from "./components/sections/license";
 import Overview from "./components/sections/overview";
 import Structure from "./components/sections/structure";
-import Motivation from "./components/sections/motivation";
 import EvaluationAndLeaderboard from "./components/sections/evaluation";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <Hero />
       <Width className="flex flex-col gap-10 px-4">
         <Overview />
-        <Motivation />
         <Tracks />
         <Structure />
         <EvaluationAndLeaderboard />

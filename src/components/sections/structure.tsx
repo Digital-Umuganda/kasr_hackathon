@@ -4,180 +4,92 @@ import type { ColumnDef } from "@tanstack/react-table";
 import Title from "../title";
 import { DataTable } from "../table";
 
-// Assets
-import folder from "../../assets/folder.svg";
-
-type Type1 = {
-  test: string;
-  train: string;
-  track: string;
+type Language = {
+  language: string;
+  dialects: string;
+  iso: string;
+  read: string;
+  spontaneous: string;
   total: string;
-  devtest: string;
-  unlabeled: string;
 };
 
-type Type2 = {
-  type: string;
-  field: string;
-  required: string;
-  description: string;
-};
-
-const columns1: ColumnDef<Type1>[] = [
+const columns: ColumnDef<Language>[] = [
   {
-    header: "Track",
-    accessorKey: "track",
+    header: "Language",
+    accessorKey: "language",
   },
   {
-    accessorKey: "train",
-    header: "Train (hrs)",
+    header: "Dialects",
+    accessorKey: "dialects",
   },
   {
-    accessorKey: "devtest",
-    header: "Devtest (hrs)",
+    header: "ISO",
+    accessorKey: "iso",
   },
   {
-    accessorKey: "test",
-    header: "Test (hrs) †",
+    header: "Collected using the Read method (Hrs)",
+    accessorKey: "read",
   },
   {
-    accessorKey: "unlabeled",
-    header: "Unlabeled (hrs)",
+    header: "Collected using the spontaneous method (Hrs)",
+    accessorKey: "spontaneous",
   },
   {
+    header: "Total No. Hours",
     accessorKey: "total",
-    header: "Total Audio (hrs)",
-  },
-];
-
-const columns2: ColumnDef<Type2>[] = [
-  {
-    header: "Field",
-    accessorKey: "field",
-  },
-  {
-    header: "Required?",
-    accessorKey: "required",
-  },
-  {
-    header: "Data Type",
-    accessorKey: "type",
-  },
-  {
-    header: "Description",
-    accessorKey: "description",
   },
 ];
 
 const Structure = () => {
-  const data1: Type1[] = [
+  const data: Language[] = [
     {
-      test: "25",
-      train: "490",
-      total: "540",
-      devtest: "25",
-      unlabeled: "-",
-      track: "A — Small",
+      language: "Swahili",
+      dialects:
+        "Swahili-english (nairobi, kisi, wajir, mombasa, nakuru), Swahili Tanzania",
+      iso: "Swa",
+      read: "0",
+      spontaneous: "2979",
+      total: "2979",
     },
     {
-      test: "50",
-      train: "980",
-      devtest: "50",
-      total: "1180",
-      unlabeled: "-",
-      track: "B — Medium",
+      language: "Dholuo",
+      dialects: "Nyijuodwet, Ntlambo",
+      iso: "Luo",
+      read: "185",
+      spontaneous: "528",
+      total: "723",
     },
     {
-      test: "50",
-      train: "980",
-      total: "2250",
-      devtest: "50",
-      unlabeled: "1170",
-      track: "C — Large",
-    },
-  ];
-
-  const data2: Type2[] = [
-    {
-      type: "string",
-      required: "True",
-      field: "voice_creator_id",
-      description: "An id for the voice contributor",
+      language: "Kikuyu",
+      dialects: "Gi-Kabete, Ki-Mathira, Ki-Muranga, Ki-Kibi & Gi-Githugu",
+      iso: "Kik",
+      read: "183",
+      spontaneous: "571",
+      total: "754",
     },
     {
-      type: "string",
-      required: "True",
-      field: "image_path",
-      description: "The path to the image file",
+      language: "Somali",
+      dialects: "Maadino, Mugdishu",
+      iso: "som",
+      read: "118",
+      spontaneous: "884",
+      total: "1002",
     },
     {
-      type: "string",
-      required: "True",
-      field: "image_category",
-      description: "One of the 5 categories of the dataset",
+      language: "Kalenjin",
+      dialects: "Nandi & Kipsigis",
+      iso: "kal",
+      read: "122",
+      spontaneous: "399",
+      total: "521",
     },
     {
-      type: "string",
-      required: "False",
-      field: "image_sub_category",
-      description: "A subcategory of the image",
-    },
-    {
-      type: "string",
-      required: "True",
-      field: "audio_path",
-      description: "The path to the audio file",
-    },
-    {
-      type: "string",
-      required: "False",
-      field: "transcription",
-      description: "The  transcribed written sentence",
-    },
-    {
-      field: "age",
-      type: "string",
-      required: "False",
-      description: "The age range of the speaker",
-    },
-    {
-      type: "string",
-      field: "gender",
-      required: "False",
-      description: "The gender of the speaker (Male, Female, Unknown)",
-    },
-    {
-      type: "string",
-      required: "True",
-      field: "project_name",
-      description:
-        "Name of the project (in this case it is afrivoice_kinyarwanda)",
-    },
-    {
-      type: "string",
-      field: "locale",
-      required: "True",
-      description:
-        "The locale of the speaker (language_country_where_data_was_collected in )",
-    },
-    {
-      type: "Int",
-      field: "year",
-      required: "True",
-      description: "Year of the recording",
-    },
-    {
-      field: "dialect",
-      type: "string",
-      required: "False",
-      description: "The Language variant collected",
-    },
-    {
-      type: "string",
-      field: "location",
-      required: "False",
-      description:
-        "The location of the contributor (smaller administrative unit to countries), this can be used to spot accents and specific terms depending on the location",
+      language: "Maasai",
+      dialects: "Kimasasi & Kioamburu",
+      iso: "mas",
+      read: "31",
+      spontaneous: "494",
+      total: "525",
     },
   ];
 
@@ -186,32 +98,16 @@ const Structure = () => {
       <Title className="text-[#009263] text-4xl">Dataset Structure</Title>
       <div className="flex flex-col gap-4">
         <p className="text-justify">
-          The dataset was collected through a{" "}
-          <span className="font-black">crowd-sourcing methodology</span>. It
-          consists of <span className="font-black">audio recordings</span>,{" "}
-          <span className="font-black">images</span>, and a{" "}
-          <span className="font-black">manifest</span>. Contributors were
-          presented with images and asked to describe them by recording
-          themselves speaking, with recordings ranging from{" "}
-          <span className="font-black">10 to 30 seconds</span>.
+          The <span className="font-black">AfriVoices-KE dataset</span> consists
+          of both <span className="font-black">scripted</span> and{" "}
+          <span className="font-black">unscripted</span> speech samples recorded
+          across multiple dialects and regions.
         </p>
-        <div className="flex items-start">
-          <Title className="text-xl text-[#009263]">
-            Dataset Sizes & Splits per Track
-          </Title>
-        </div>
-        <DataTable columns={columns1} data={data1} />
-        <p>
-          † <span className="font-black">Test transcriptions are withheld</span>{" "}
-          and used exclusively for leaderboard evaluation.
+        <p className="text-justify">
+          It supports development of ASR models in diverse linguistic and
+          environmental conditions.
         </p>
-        <p>Each track is delivered as:</p>
-        <img src={folder} alt="Folder Structure" className="w-full" />
-        <p>
-          Text for the <span className="font-black">test</span> split is
-          withheld. Speaker and domain tags enable domain‑robust training.
-        </p>
-        <DataTable columns={columns2} data={data2} />
+        <DataTable columns={columns} data={data} />
       </div>
     </div>
   );
