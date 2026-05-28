@@ -27,7 +27,7 @@ const Prizes = () => {
       prize: "1000 USD",
     },
     {
-      category: "2nd Place",
+      category: "🥈 2nd Place",
       prize: "500 USD",
     },
     {

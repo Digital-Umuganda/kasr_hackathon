@@ -31,8 +31,8 @@ const Hero = () => {
       </div>
       <div className="z-10 absolute bottom-4 md:right-auto right-4 left-4 w-auto p-6 h-auto bg-white rounded gap-8 flex flex-wrap flex-row items-center">
         <p>Organized by:</p>
+        <img src={mcaai} alt="mcaai" className="w-[200px]" />
         <img src={logo} alt="gates" className="w-[150px]" />
-        <img src={mcaai} alt="mcaai" className="w-[150px]" />
       </div>
     </Width>
   );

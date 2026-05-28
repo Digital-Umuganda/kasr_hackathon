@@ -17,26 +17,44 @@ const columns: ColumnDef<Language>[] = [
   {
     header: "Language",
     accessorKey: "language",
+    cell: ({ row }) => (
+      <div className="max-w-[200px]">{row.getValue("language")}</div>
+    ),
   },
   {
     header: "Dialects",
     accessorKey: "dialects",
+    cell: ({ row }) => (
+      <div className="max-w-[400px]">{row.getValue("dialects")}</div>
+    ),
   },
   {
     header: "ISO",
     accessorKey: "iso",
+    cell: ({ row }) => (
+      <div className="max-w-[200px] text-[#009263]">{row.getValue("iso")}</div>
+    ),
   },
   {
     header: "Collected using the Read method (Hrs)",
     accessorKey: "read",
+    cell: ({ row }) => (
+      <div className="max-w-[200px]">{row.getValue("read")}</div>
+    ),
   },
   {
     header: "Collected using the spontaneous method (Hrs)",
     accessorKey: "spontaneous",
+    cell: ({ row }) => (
+      <div className="max-w-[200px]">{row.getValue("spontaneous")}</div>
+    ),
   },
   {
     header: "Total No. Hours",
     accessorKey: "total",
+    cell: ({ row }) => (
+      <div className="max-w-[200px]">{row.getValue("total")}</div>
+    ),
   },
 ];
 
